@@ -13,7 +13,7 @@ body {
 }
 
 
-/* Navbar */
+
 .navbar {
     width: 100%;
     height: 65px;
@@ -27,7 +27,6 @@ body {
     z-index: 10;
 }
 
-/* Центральный контейнер для табов */
 .navbar-inner {
     display: flex;
     flex-direction: row;
@@ -61,14 +60,14 @@ body {
     color: #252C32;
 }
 
-/* Подчёркивание активной вкладки */
+
 .tab .underline {
     width: 100%;
     height: 1px;
     background: #4094F7;
 }
 
-/* Контейнер пользователя, прижат вправо */
+
 .user {
     display: flex;
     flex-direction: row;
@@ -103,7 +102,6 @@ body {
     align-items: center;
     gap: 10px;
     margin-left: auto;
-    /* Прижимает user к правому краю */
 }
 
 
@@ -120,20 +118,17 @@ body {
     flex-direction: column;
     position: fixed;
     width: 100%;
-    /* Исправлено: теперь растягивается на всю ширину экрана */
     max-width: none;
-    /* Снимаем ограничения */
     height: 104px;
     top: 65px;
     left: 0;
     right: 0;
-    /* Обязательно добавляем right:0 */
     background: #FFFFFF;
     z-index: 9;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
 }
 
-/* Верхняя часть меню бара */
+
 .menu-top {
     display: flex;
     align-items: center;
@@ -143,14 +138,14 @@ body {
     height: 56px;
 }
 
-/* Блок слева (заголовок + кнопка) */
+
 .menu-top-left {
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
-/* Заголовок меню */
+
 .menu-title {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -160,7 +155,7 @@ body {
     color: #252C32;
 }
 
-/* Кнопка "Оформить поездку" */
+
 .button-primary {
     display: flex;
     align-items: center;
@@ -182,7 +177,7 @@ body {
     font-size: 18px;
 }
 
-/* Нижняя часть фильтров (menu-filters) */
+
 .menu-filters {
     display: flex;
     align-items: center;
@@ -193,14 +188,14 @@ body {
     background: #F6FCFF;
 }
 
-/* Контейнер фильтров по центру */
+
 .filters-inner {
     display: flex;
     align-items: center;
     gap: 32px;
 }
 
-/* Блок выбора дат */
+
 .date-picker {
     display: flex;
     align-items: center;
@@ -213,7 +208,7 @@ body {
     color: #252C32;
 }
 
-/* Общие стили для контейнера */
+
 .date-picker {
     position: relative;
     display: flex;
@@ -221,7 +216,7 @@ body {
     gap: 8px;
 }
 
-/* Оформление инпута */
+
 .date-picker input {
     width: 180px;
     height: 32px;
@@ -236,12 +231,12 @@ body {
     position: relative;
 }
 
-/* Убираем стандартную иконку календаря */
+
 .date-picker input::-webkit-calendar-picker-indicator {
     display: none;
 }
 
-/* Добавляем кастомную иконку */
+
 .date-picker::after {
     content: "";
     position: absolute;
@@ -250,12 +245,12 @@ body {
     height: 16px;
     background: url('1.svg') no-repeat center;
     background-size: contain;
-    pointer-events: none; /* Чтобы клик не срабатывал на иконке */
+    pointer-events: none; 
 }
-/* Крестик (всегда виден) */
+
 .clear-date {
     position: absolute;
-    right: 35px; /* Расположение слева от иконки календаря */
+    right: 35px; 
     width: 16px;
     height: 16px;
     background: url('2.svg') no-repeat center;
@@ -263,7 +258,7 @@ body {
     pointer-events: none;
     opacity: 0.5;
 }
-/* Блок поиска */
+
 .search {
     position: relative;
 }
@@ -282,7 +277,7 @@ body {
     top: 6px;
     cursor: pointer;
 }
-/* Кнопка "Сбросить все" */
+
 .reset-all {
     background: none;
     border: none;
@@ -292,7 +287,7 @@ body {
     font-size: 14px;
 }
 
-/* Чекбокс "Показать архивные вкладки" */
+
 .archive-checkbox {
     display: flex;
     align-items: center;
@@ -312,12 +307,11 @@ body {
     color: #252C32;
 }
 
-/* Spinner */
+
 .spinner {
     position: fixed;
     top: 169px;
     width: 100%;
-    /* на всю ширину экрана */
     left: 0;
     right: 0;
     height: 2px;
@@ -331,7 +325,7 @@ body {
     background: #4094F7;
 }
 
-/* Cards Container */
+
 .cards-container {
     width: 100%;
     max-width: 1416px;
@@ -342,7 +336,7 @@ body {
     gap: 10px;
 }
 
-/* Single Card */
+
 .card {
     background: #FFFFFF;
     border-radius: 6px;
@@ -357,7 +351,6 @@ body {
     cursor: pointer;
 }
 
-/* Card Row */
 .card-row {
     width: 100%;
     display: flex;
@@ -365,14 +358,13 @@ body {
     gap: 28px;
 }
 
-/* Card Blocks */
 .card-block {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-/* Width per block (Figma precise) */
+
 .trip-number {
     width: 100px;
 }
@@ -397,7 +389,6 @@ body {
     align-items: center;
 }
 
-/* Typography */
 .label {
     font-size: 12px;
     color: #84919A;
@@ -426,7 +417,7 @@ body {
     position: absolute;
     left: 0;
     bottom: -2px; 
-    width: 42px; /* Длина линии соответствует ширине текста */
+    width: 42px; 
     height: 1px;
     background-color: #4094F7;
     opacity: 0.2;
