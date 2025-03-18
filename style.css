@@ -75,7 +75,7 @@ body {
     margin-left: auto;
 }
 
-/* Имя пользователя */
+
 .user-name {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
@@ -83,7 +83,7 @@ body {
     color: #0E73F6;
 }
 
-/* Иконка выхода */
+
 .logout-icon {
     width: 16px;
     height: 16px;
@@ -112,7 +112,7 @@ body {
 
 
 
-/* Menu bar (по фигме) */
+
 .menu-bar {
     display: flex;
     flex-direction: column;
@@ -344,11 +344,15 @@ body {
     display: flex;
     align-items: center;
     height: 80px;
+    border: 1px solid transparent;
+    transition: border 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .card:hover {
+    border-color: #9BCFFD; 
+}
+.card:hover {
     border: 1px solid #9BCFFD;
-    cursor: pointer;
 }
 
 .card-row {
@@ -401,7 +405,7 @@ body {
 
 .numb {
     width: 64px;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -409,7 +413,7 @@ body {
     color: #0E73F6;
     position: relative;
     text-decoration: none;
-    display: inline-block; 
+    display: inline-block;
 }
 
 .numb::after {
@@ -424,12 +428,11 @@ body {
     transition: opacity 0.3s ease-in-out;
 }
 
-    
-/* Исчезает при наведении на всю карточку */
-.card:hover .numb::after {
+
+.numb:hover::after {
     opacity: 0;
 }
-
+    
 
 
 .badge {
