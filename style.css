@@ -10,6 +10,7 @@ body {
     min-width: 1440px;
     background: #F6FCFF;
     padding-top: 170px;
+    height: 960px;
 }
 
 
@@ -99,18 +100,40 @@ body {
 
 .user {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     gap: 10px;
-    margin-left: auto;
+    margin-right: 16px;
+    width: 142px;
+    position: relative;
 }
 
+.user::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 142px;
+    height: 0;
+    border-bottom: 1px dashed #0E73F6;
+    opacity: 0.2;
+}
 
-.user-name {
+.user:hover::after{
+    opacity: 0;
+}
+
+.user-name a {
     font-size: 14px;
     color: #0E73F6;
+
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.6%;
+    text-decoration: none;
+    
 }
-
-
 
 
 .menu-bar {
@@ -220,14 +243,14 @@ body {
 .date-picker input {
     width: 180px;
     height: 32px;
-    padding: 0 32px 0 8px; 
+    padding: 0 32px 0 8px;
     border: 1px solid #DDE2E4;
     border-radius: 6px;
     font-size: 14px;
     background-color: #fff;
-    appearance: none; 
+    appearance: none;
     -webkit-appearance: none;
-    -moz-appearance: none; 
+    -moz-appearance: none;
     position: relative;
 }
 
@@ -240,17 +263,18 @@ body {
 .date-picker::after {
     content: "";
     position: absolute;
-    right: 10px; /* Расположение справа */
+    right: 10px;
+    /* Расположение справа */
     width: 16px;
     height: 16px;
     background: url('1.svg') no-repeat center;
     background-size: contain;
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 .clear-date {
     position: absolute;
-    right: 35px; 
+    right: 35px;
     width: 16px;
     height: 16px;
     background: url('2.svg') no-repeat center;
@@ -349,8 +373,9 @@ body {
 }
 
 .card:hover {
-    border-color: #9BCFFD; 
+    border-color: #9BCFFD;
 }
+
 .card:hover {
     border: 1px solid #9BCFFD;
 }
@@ -409,7 +434,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: -0.6%;
+    letter-spacing: -0.006em;
     color: #0E73F6;
     position: relative;
     text-decoration: none;
@@ -420,7 +445,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px; 
+    bottom: -2px;
     width: 48px;
     height: 1px;
     background-color: #4094F7;
@@ -432,7 +457,7 @@ body {
 .numb:hover::after {
     opacity: 0;
 }
-    
+
 
 
 .badge {
